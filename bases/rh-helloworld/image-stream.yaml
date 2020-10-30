@@ -1,0 +1,10 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  name: rh-helloworld
+  label:
+    app: rh-helloworld
+spec:
+  lookupPolicy:
+    local: false
+  tags: []
