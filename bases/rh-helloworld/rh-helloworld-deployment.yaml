@@ -8,8 +8,6 @@ spec:
   selector:
     matchLabels:
       app: rh-helloworld
-  strategy:
-    type: RollingUpdate
   template:
     metadata:
       labels:
