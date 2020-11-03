@@ -9,3 +9,4 @@ resources:
 images:
 - name: rh-helloworld
   newName: image-registry.openshift-image-registry.svc:5000/rh-helloworld-prod-env/rh-helloworld
+  newTag: 0.0.1-12

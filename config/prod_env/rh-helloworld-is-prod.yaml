@@ -7,4 +7,11 @@ metadata:
 spec:
   lookupPolicy:
     local: false
-  tags: []
+  tags:
+  - name: 0.0.1-12
+    from:
+      kind: DockerImage
+      name: quay.io/hluong/helloworld-python:0.0.1-12
+    importPolicy: {}
+    referencePolicy:
+      type: Local
