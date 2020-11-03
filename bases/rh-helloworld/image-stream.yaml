@@ -5,6 +5,4 @@ metadata:
   labels:
     app: rh-helloworld
 spec:
-  lookupPolicy:
-    local: false
   tags: []
