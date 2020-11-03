@@ -13,7 +13,7 @@ spec:
     path: deployments/build_and_test
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: rh-helloworld-dev-env
   syncPolicy:
     automated:
       prune: true
