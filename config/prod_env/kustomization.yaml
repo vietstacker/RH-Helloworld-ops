@@ -2,12 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: rh-helloworld-prod-env
 bases:
-- ../../bases/rh-helloworld
+  - ../../bases/rh-helloworld
 # check whether or not we need team-rolebinding
 resources:
-- rh-helloworld-namespace.yaml
+  - rh-helloworld-namespace.yaml
 patchesStrategicMerge:
-- rh-helloworld-is-prod.yaml
+  - rh-helloworld-is-prod.yaml
 images:
-- name: rh-helloworld
-  newName: image-registry.openshift-image-registry.svc:5000/rh-helloworld-prod-env/rh-helloworld
+  - name: rh-helloworld
+    newName: image-registry.openshift-image-registry.svc:5000/rh-helloworld-prod-env/rh-helloworld
+    newTag: 0.0.1-13
