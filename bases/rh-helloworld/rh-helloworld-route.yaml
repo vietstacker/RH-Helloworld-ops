@@ -6,7 +6,7 @@ metadata:
   name: rh-helloworld
 spec:
   port:
-    targetPort: 8080-tcp
+    targetPort: 8080
   to:
     kind: Service
     name: rh-helloworld
