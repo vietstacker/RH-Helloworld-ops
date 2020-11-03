@@ -13,7 +13,7 @@ spec:
     path: config/test_env
   destination:
     server: https://kubernetes.default.svc
-    namespace: manuela-tst-all
+    namespace: rh-helloworld-dev-env
   syncPolicy:
     automated: 
       prune: true
