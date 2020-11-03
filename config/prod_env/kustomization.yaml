@@ -6,7 +6,8 @@ bases:
 # check whether or not we need team-rolebinding
 resources:
 - rh-helloworld-namespace.yaml
+patchesStrategicMerge:
+- rh-helloworld-is-prod.yaml
 images:
 - name: rh-helloworld
   newName: image-registry.openshift-image-registry.svc:5000/rh-helloworld-prod-env/rh-helloworld
-  newTag: 0.0.1-13
