@@ -15,3 +15,10 @@ spec:
     importPolicy: {}
     referencePolicy:
       type: Local
+  - name: 0.0.1-13
+    from:
+      kind: DockerImage
+      name: quay.io/hluong/helloworld-python:0.0.1-13
+    importPolicy: {}
+    referencePolicy:
+      type: Local
