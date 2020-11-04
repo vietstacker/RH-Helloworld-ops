@@ -5,8 +5,6 @@ metadata:
   labels:
     app: rh-helloworld
 spec:
-  lookupPolicy:
-    local: false
   tags:
   - name: 0.0.1-12
     from:

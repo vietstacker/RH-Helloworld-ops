@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-from-pipeline-projects
+spec:
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          rh-helloworld-dev-env-role: pipeline
+  podSelector: {}
+  policyTypes:
+  - Ingress

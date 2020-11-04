@@ -7,7 +7,6 @@ metadata:
 spec:
   selector:
     app: rh-helloworld
-    deploymentconfig: rh-helloworld
   ports:
   - port: 8080
     targetPort: 8080
